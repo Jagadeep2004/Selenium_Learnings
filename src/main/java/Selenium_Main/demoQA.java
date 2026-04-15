@@ -13,16 +13,16 @@ public class demoQA {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://demoqa.com/browser-windows");
-		String parent = driver.getWindowHandle();
-		System.out.println("Parent Unique Code: "+parent);
-		
-		Set<String> allWindowHandles = driver.getWindowHandles();
-		System.out.println("Count: "+allWindowHandles.size());
-		
-		WebElement windowButton = driver.findElement(By.id("windowButton"));
-		windowButton.click();
-		
+		driver.get("https://www.hyrtutorials.com/");
+//		String parent = driver.getWindowHandle();
+//		System.out.println("Parent Unique Code: "+parent);
+//		
+//		Set<String> allWindowHandles = driver.getWindowHandles();
+//		System.out.println("Count: "+allWindowHandles.size());
+//		
+//		WebElement windowButton = driver.findElement(By.id("windowButton"));
+//		windowButton.click();
+//		
 		Set<String> newallWindowHandles = driver.getWindowHandles();
 		System.out.println("Count of Window: "+newallWindowHandles);
 		System.out.println("Count: "+newallWindowHandles.size());

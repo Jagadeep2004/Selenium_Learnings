@@ -17,12 +17,12 @@ public class JsDemoHyr {
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
-//		js.executeScript("document.getElementsByTagName('input')[0].value='Jagu';");
-//		js.executeScript("document.getElementsByTagName('input')[1].value='K C';");
-//		js.executeScript("document.getElementsByTagName('input')[2].value='abc@gmail.com';");
-//		js.executeScript("document.getElementsByTagName('input')[3].value='Jagu';");
-//		js.executeScript("document.getElementsByTagName('input')[4].value='King';");
-//		js.executeScript("document.getElementsByTagName('button')[0].click();");
+		js.executeScript("document.getElementsByTagName('input')[0].value='Jagu';");
+		js.executeScript("document.getElementsByTagName('input')[1].value='K C';");
+		js.executeScript("document.getElementsByTagName('input')[2].value='abc@gmail.com';");
+		js.executeScript("document.getElementsByTagName('input')[3].value='Jagu';");
+		js.executeScript("document.getElementsByTagName('input')[4].value='King';");
+		js.executeScript("document.getElementsByTagName('button')[0].click();");
 		
 		js.executeScript("window.scrollBy(0,600)");
 		
