@@ -82,11 +82,11 @@ public class DemoBlazeAssessment {
 
         driver.findElement(By.xpath("//button[text()='Place Order']")).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name"))).sendKeys("Vetri");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name"))).sendKeys("Jagadeep");
         driver.findElement(By.id("country")).sendKeys("India");
-        driver.findElement(By.id("city")).sendKeys("Chennai");
-        driver.findElement(By.id("card")).sendKeys("123456");
-        driver.findElement(By.id("month")).sendKeys("April");
+        driver.findElement(By.id("city")).sendKeys("Salem");
+        driver.findElement(By.id("card")).sendKeys("789456");
+        driver.findElement(By.id("month")).sendKeys("December");
         driver.findElement(By.id("year")).sendKeys("2026");
 
         driver.findElement(By.xpath("//button[text()='Purchase']")).click();
