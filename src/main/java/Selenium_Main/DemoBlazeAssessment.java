@@ -91,11 +91,11 @@ public class DemoBlazeAssessment {
 
         driver.findElement(By.xpath("//button[text()='Purchase']")).click();
 
-        WebElement confirm = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@class,'sweet-alert')]")));
+        WebElement confirm = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[10]/h2")));
 
         String purchase = confirm.getText();
 
-        if (purchase.contains("Order Id")) {
+        if (purchase.contains("Thank you")) {
             System.out.println("Order is placed successfully");
             System.out.println(purchase);
         }
@@ -104,7 +104,7 @@ public class DemoBlazeAssessment {
         }
 
         driver.findElement(By.xpath("//button[text()='OK']")).click();
-
-        driver.quit();
+        driver.quit();	
+        
     }
 }
